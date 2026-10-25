@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Black & White Swan | Ballet</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f6f2;
+            color: #252525;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+
+        h1, h2, h3, h5 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .hero {
+            background-color: #eeece7;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            letter-spacing: 5px;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .intro {
+            max-width: 700px;
+            line-height: 1.9;
+            margin: auto;
+        }
+
+        .section-title {
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+        }
+
+        .ballet-card {
+            background-color: #fffefa;
+            border: 1px solid #e4e0d9;
+            padding: 28px;
+            height: 100%;
+            transition: 0.3s ease;
+        }
+
+        .ballet-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .ballet-card h3 {
+            font-size: 1.8rem;
+        }
+
+        .swan-img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            margin-bottom: 20px;
+        }
+
+        .ballet-card p, .ballet-card li {
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        .quote {
+            background-color: #252525;
+            color: #f8f6f2;
+            padding: 55px 20px;
+        }
+
+        .quote h2 {
+            font-size: 2.3rem;
+            font-style: italic;
+        }
+
+        footer {
+            padding: 25px 15px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: #777;
+        }
+
+        @media (max-width: 576px) {
+            .hero-img {
+                height: 300px;
+            }
+
+            .subtitle {
+                letter-spacing: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container text-center">
+
+            <p class="subtitle mb-3">Elegance in every movement</p>
+
+            <h1>BLACK & WHITE SWAN</h1>
+
+            <p class="mt-3 mb-4">
+                The beauty, discipline, and art of ballet.
+            </p>
+
+            <img
+                class="hero-img"
+                src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=1400&q=85"
+                alt="A graceful dancer in a dramatic monochrome setting"
+            >
+
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="container text-center py-5">
+
+        <p class="subtitle mb-3">A world of grace</p>
+
+        <h2 class="section-title mb-4">The Art of Ballet</h2>
+
+        <p class="intro">
+            Ballet is a classical dance form known for its graceful movements,
+            precise techniques, and expressive storytelling. Behind every
+            effortless performance are years of practice, patience, and
+            dedication. From delicate white tutus to dramatic black costumes,
+            ballet is an art that turns movement into emotion.
+        </p>
+
+    </div>
+
+    <!-- Ballet Cards -->
+    <div class="container py-4">
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- White Swan -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="ballet-card">
+
+                    <img
+                        class="swan-img"
+                        src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=800&q=85"
+                        alt="Ballet dancer in a graceful pose"
+                    >
+
+                    <h3>01. The White Swan</h3>
+
+                    <p>
+                        Delicate, gentle, and full of innocence, the White Swan
+                        represents purity and elegance. Her movements are soft,
+                        controlled, and seemingly effortless.
+                    </p>
+
+                    <ul>
+                        <li>Soft and flowing movements</li>
+                        <li>Light, graceful expressions</li>
+                        <li>Often associated with white tutus</li>
+                        <li>Inspired by Odette in Swan Lake</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Black Swan -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="ballet-card">
+
+                    <img
+                        class="swan-img"
+                        src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=85"
+                        alt="Ballet performance with dramatic stage lighting"
+                    >
+
+                    <h3>02. The Black Swan</h3>
+
+                    <p>
+                        Bold, mysterious, and captivating, the Black Swan
+                        expresses confidence and intensity. Her performance
+                        demands precision, strength, and remarkable control.
+                    </p>
+
+                    <ul>
+                        <li>Sharp and powerful movements</li>
+                        <li>Confident stage presence</li>
+                        <li>Often associated with black costumes</li>
+                        <li>Inspired by Odile in Swan Lake</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Ballet Basics -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="ballet-card">
+
+                    <img
+                        class="swan-img"
+                        src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=800&q=85"
+                        alt="Dancer practicing the art of ballet"
+                    >
+
+                    <h3>03. The Foundations</h3>
+
+                    <p>
+                        Every beautiful performance begins with the basics.
+                        Ballet dancers develop strength, balance, flexibility,
+                        and musicality through consistent training.
+                    </p>
+
+                    <ul>
+                        <li>Five basic foot positions</li>
+                        <li>Balance and posture</li>
+                        <li>Barre and center exercises</li>
+                        <li>Musicality and expression</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <!-- Quote -->
+    <div class="quote text-center">
+
+        <div class="container">
+
+            <p class="subtitle mb-3">Beyond the stage</p>
+
+            <h2>
+                "Dance is the hidden language of the soul."
+            </h2>
+
+            <p class="mt-3 mb-0">
+                Every movement tells a story.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+
+        <p class="mb-0">
+            Made by Tehnoor Kaur | Grade 9 - Emerald
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
